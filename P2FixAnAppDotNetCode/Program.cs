@@ -33,8 +33,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
-var supportedCultures = new[] { "en-GB", "en-US", "en", "fr-FR", "fr" };
+// BeFr - Ajout es-ES, es
+// BeFr - Remplace : { "en-GB", "en-US", "en", "fr-FR", "fr", "es-ES", "es" };
+//             par : { "en-GB", "fr-FR", "es-ES" };
+var supportedCultures = new[] { "en-GB", "fr-FR", "es-ES" };
 var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
     .AddSupportedCultures(supportedCultures.ToArray())
     .AddSupportedUICultures(supportedCultures);

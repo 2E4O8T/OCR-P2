@@ -32,7 +32,8 @@ namespace P2FixAnAppDotNetCode.Models
         {
             // TODO implementer la méthode
             //BeFr - Ajouter un élément (cf.
-            if (lignesPanier.Exists(p => p.Produit.Id == produit.Id))
+            /*
+             * if (lignesPanier.Exists(p => p.Produit.Id == produit.Id))
             {
                 foreach (LignePanier ligne in lignesPanier)
                 {
@@ -49,6 +50,17 @@ namespace P2FixAnAppDotNetCode.Models
                     Produit = produit,
                     Quantite = quantite,
                 });
+            }
+            */
+            var lignePanier = GetListeDesLignesDuPanier();
+            var ligne = lignePanier.FirstOrDefault(p => p.Produit== produit);
+            if (ligne != null)
+            {
+                ligne.Quantite = quantite;
+            }
+            else
+            {
+                lignePanier.Add(new LignePanier { Produit= produit,Quantite= quantite });
             }
         }
 

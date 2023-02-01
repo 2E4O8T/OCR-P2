@@ -29,10 +29,13 @@ namespace P2FixAnAppDotNetCode.Models.Services
             switch (langage)
             {
                 case "English":
-                    culture = "en";
+                    culture = "en-GB";
                     break;
                 case "French":
-                    culture = "fr";
+                    culture = "fr-FR";
+                    break;
+                case "Spanish":
+                    culture = "es-ES";
                     break;
             }
             

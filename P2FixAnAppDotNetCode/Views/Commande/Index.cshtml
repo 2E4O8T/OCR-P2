@@ -9,7 +9,9 @@
         <label>@Localizer["Name"]*:</label><input asp-for="Nom" class="form-control" />
         <span asp-validation-for="Nom" class="text-danger"></span> <!-- //BeFr - Ajout de la ligne -->
     </div>
-    <h3>@Localizer["Address"]</h3>
+    <!-- //BeFr  Remplace : ["Address"]
+                    par : ["Adress"] -->
+    <h3>@Localizer["Adress"]</h3>
     <div class="mb-3">
         <label>@Localizer["Location"]*:</label><input asp-for="Adresse" class="form-control" />
         <span asp-validation-for="Adresse" class="text-danger"></span> <!-- //BeFr - Ajout de la ligne -->
