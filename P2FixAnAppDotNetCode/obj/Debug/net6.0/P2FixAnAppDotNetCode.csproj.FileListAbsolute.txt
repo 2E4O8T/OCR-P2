@@ -63,3 +63,8 @@ C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.Resources.Views.Shared.Components.ResumePanier.Default.es.resources
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.Resources.Views.Shared.Components.SelectionLangage.Default.es.resources
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\es\P2FixAnAppDotNetCode.resources.dll
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.Resources.Views.Produit.NomProduit.en.resources
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.Resources.Views.Produit.NomProduit.es.resources
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.Resources.Views.Produit.NomProduit.fr.resources
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\bin\Debug\net6.0\P2FixAnAppDotNetCode.xml
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCode\obj\Debug\net6.0\P2FixAnAppDotNetCode.xml

@@ -20,8 +20,12 @@ namespace P2FixAnAppDotNetCode.Models
         /// <returns></returns>
         private List<LignePanier> GetListeDesLignesDuPanier()
         {
-            // BeFr - Remplace : return new List<LignePanier>();
-            //             par : return lignesPanier;
+            ///<sumary>
+            ///BeFr - Passer d'un Array à une List<T>
+            ///Remplace : return new List<LignePanier>();
+            ///Par : return lignesPanier;
+            ///</sumary>
+
             return lignesPanier;
         }
 
@@ -31,27 +35,9 @@ namespace P2FixAnAppDotNetCode.Models
         public void AjouterElement(Produit produit, int quantite)
         {
             // TODO implementer la méthode
-            //BeFr - Ajouter un élément (cf.
-            /*
-             * if (lignesPanier.Exists(p => p.Produit.Id == produit.Id))
-            {
-                foreach (LignePanier ligne in lignesPanier)
-                {
-                    if (ligne.Produit.Id == produit.Id)
-                    {
-                        ligne.Quantite += quantite;
-                    }
-                }
-            }
-            else
-            {
-                lignesPanier.Add(new LignePanier()
-                {
-                    Produit = produit,
-                    Quantite = quantite,
-                });
-            }
-            */
+            ///<sumary>
+            ///BeFr - Méthode pour ajouter un produit dans le panier
+            ///</sumary>
             var lignePanier = GetListeDesLignesDuPanier();
             var ligne = lignePanier.FirstOrDefault(p => p.Produit== produit);
             if (ligne != null)
@@ -76,7 +62,9 @@ namespace P2FixAnAppDotNetCode.Models
         public double GetValeurTotale()
         {
             // TODO implementer la méthode
-            //BeFr - Ajout Calcul Total Panier
+            ///<sumary>
+            ///BeFr - Méthode pour calculer la valeur totale du panier
+            ///</sumary>
             double somme = 0.0;
             foreach (LignePanier lignes in lignesPanier)
             {
@@ -91,7 +79,9 @@ namespace P2FixAnAppDotNetCode.Models
         public double GetValeurMoyenne()
         {
             // TODO implementer la méthode
-            //BeFr - Ajout Calcul Valeur Moyenne
+            ///<sumary>
+            ///BeFr - Méthode pour calculer la valeur moyenne du panier
+            ///</sumary>
             double moyenne = 0.0;
             double quantiteTotale = 0.0;
             foreach (var lignes in lignesPanier)
@@ -108,7 +98,9 @@ namespace P2FixAnAppDotNetCode.Models
         public Produit TrouveProduitDansLesLignesDuPanier(int idProduit)
         {
             // TODO implementer la méthode
-            //BeFr
+            ///<sumary>
+            ///BeFr - Méthode pour trouver un produit par son id dans le panier
+            ///</sumary>
             Produit trouveProduit = null;
             foreach (var ligne in lignesPanier)
             {

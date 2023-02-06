@@ -18,9 +18,10 @@ namespace P2FixAnAppDotNetCode.Controllers
 
         public IActionResult Index()
         {
-            // BeFr - Remplace : Produit[] produits = _produitService.GetTousLesProduits();
-            //             par : List<Produit> produits = _produitService.GetTousLesProduits();
-            List < Produit > produits = _produitService.GetTousLesProduits();
+        //BeFr - Utiliser une List au lieu d'un Array
+        //Remplace : Produit[] produits = _produitService.GetTousLesProduits();
+        //Par : List<Produit> produits = _produitService.GetTousLesProduits();
+            List< Produit > produits = _produitService.GetTousLesProduits();
             return View(produits);
         }
     }

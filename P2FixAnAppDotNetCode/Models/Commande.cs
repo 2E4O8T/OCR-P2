@@ -21,6 +21,7 @@ namespace P2FixAnAppDotNetCode.Models
 
         [Required(ErrorMessage = "ErrorMissingCity")]
         public string Ville { get; set; }
+        // BeFr - Ajout : Required
         [Required(ErrorMessage = "ErrorMissingZip")]
         public string CodePostal { get; set; }
 

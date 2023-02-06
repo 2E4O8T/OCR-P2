@@ -33,9 +33,11 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-// BeFr - Ajout es-ES, es
-// BeFr - Remplace : { "en-GB", "en-US", "en", "fr-FR", "fr", "es-ES", "es" };
-//             par : { "en-GB", "fr-FR", "es-ES" };
+///<sumary>
+///BeFr - Ajouter le langage Espagnol
+///Remplace : var supportedCultures = new[] { "en-GB", "en-US", "en", "fr-FR", "fr" };
+///Par : var supportedCultures = new[] { "en-GB", "fr-FR", "es-ES" };
+///</sumary>
 var supportedCultures = new[] { "en-GB", "fr-FR", "es-ES" };
 var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
     .AddSupportedCultures(supportedCultures.ToArray())
