@@ -33,11 +33,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-///<sumary>
-///BeFr - Ajouter le langage Espagnol
-///Remplace : var supportedCultures = new[] { "en-GB", "en-US", "en", "fr-FR", "fr" };
-///Par : var supportedCultures = new[] { "en-GB", "fr-FR", "es-ES" };
-///</sumary>
+
 var supportedCultures = new[] { "en-GB", "fr-FR", "es-ES" };
 var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
     .AddSupportedCultures(supportedCultures.ToArray())

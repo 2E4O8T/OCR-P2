@@ -1,17 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace P2FixAnAppDotNetCode.Models.Repositories
+﻿namespace P2FixAnAppDotNetCode.Models.Repositories
 {
     /// <summary>
     /// La classe qui gère les données des produits
     /// </summary>
     public class ProduitRepository : IProduitRepository
     {
-        // BeFr - Modifie : private static List<Produit> _produits;
-        //            par : private static List<Produit> _produits = new List<Produit>();
         private static List<Produit> _produits = new List<Produit>();
-        // BeFr - Ajout condition (if) : tous les produits = 0 pour refaire le stock
         public ProduitRepository()
         {
             if (_produits.Count == 0)
@@ -19,7 +13,6 @@ namespace P2FixAnAppDotNetCode.Models.Repositories
                  GenereDesProduits();
             }
         }
-
         /// <summary>
         /// Génère une liste de produits par défaut
         /// </summary>
@@ -32,20 +25,14 @@ namespace P2FixAnAppDotNetCode.Models.Repositories
             _produits.Add(new Produit(++id, 40, 32.50, "VTech CS6114 DECT 6.0", "Téléphone sans fil"));
             _produits.Add(new Produit(++id, 50, 895.00, "NOKIA OEM BL-5J", "Téléphone portable"));
         }
-
         /// <summary>
         /// Récupère tous les produits depuis l'inventaire
         /// </summary>
-        // BeFr - Remplace : public Produit[] GetTousLesProduits()
-        //             par : public List<Produit> GetTousLesProduits()
         public List<Produit> GetTousLesProduits()
         {
             List<Produit> liste = _produits.Where(p => p.Stock > 0).OrderBy(p => p.Nom).ToList();
-            // BeFr - Remplace : return liste.ToArray();
-            //             par : return liste;
             return liste;
         }
-
         /// <summary>
         /// Met à jour le stock d'un produit dans l'inventaire à partir de son id
         /// </summary>

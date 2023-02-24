@@ -111,3 +111,4 @@ C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCodeTest\obj\Debug\net6
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCodeTest\obj\Debug\net6.0\P2FixAnAppDotNetCodeTest.pdb
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCodeTest\obj\Debug\net6.0\P2FixAnAppDotNetCodeTest.genruntimeconfig.cache
 C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCodeTest\obj\Debug\net6.0\ref\P2FixAnAppDotNetCodeTest.dll
+C:\Users\A141QT\source\repos\P2_deboguez\P2FixAnAppDotNetCodeTest\bin\Debug\net6.0\P2FixAnAppDotNetCode.xml

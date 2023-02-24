@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "w0HHocNds5fAGvhYzqFW3s0+QtdSoS9bd2RDFanNao/r9QILcQxJrXvGGrOzaJ45xXxMc4U13/6E56JHzc6YfQ==",
+  "dgSpecHash": "2LPECwItzkcMY1LbQmeGuATzqiET+lJNAb3NNQBdVV5XFmIzx9NV8cbWZfIovZ3eL5+nR610DAEFzaMbg8cMtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\A141QT\\source\\repos\\P2_deboguez\\P2FixAnAppDotNetCode\\P2FixAnAppDotNetCode.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.14\\microsoft.netcore.app.host.win-x64.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cVy2i8QE0JJTOBVNYXmXTD3GhjL1WG1UKH5kb81w87jonej7OG8xEmpOLt07GtTcVUjPmXiKJgpQbEXIet8BWA==",
+  "dgSpecHash": "y9KVzIANpnus6D0uVVXP9BrAC2ykAl21XJnxdUGMk+dea5TVzIRYB8d0Mlnuq7Oe6vCmTgmnB6wW03XpASQecg==",
   "success": true,
   "projectFilePath": "C:\\Users\\A141QT\\source\\repos\\P2_deboguez\\P2FixAnAppDotNetCodeTest\\P2FixAnAppDotNetCodeTest.csproj",
   "expectedPackageFiles": [
@@ -95,7 +95,10 @@
     "C:\\Users\\A141QT\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\A141QT\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\A141QT\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\A141QT\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\A141QT\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\A141QT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }

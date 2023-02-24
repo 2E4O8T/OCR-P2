@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace P2FixAnAppDotNetCode.Models
+﻿namespace P2FixAnAppDotNetCode.Models
 {
     /// <summary>
     /// La classe Panier
@@ -11,7 +8,6 @@ namespace P2FixAnAppDotNetCode.Models
         /// <summary>
         /// Propriété en lecture seule pour affichage seulement
         /// </summary>
-        //public IEnumerable<LignePanier> Lignes => GetListeDesLignesDuPanier();
         private List<LignePanier> lignesPanier = new List<LignePanier>(); 
         public IEnumerable<LignePanier> Lignes => lignesPanier;
         /// <summary>
@@ -20,24 +16,13 @@ namespace P2FixAnAppDotNetCode.Models
         /// <returns></returns>
         private List<LignePanier> GetListeDesLignesDuPanier()
         {
-            ///<sumary>
-            ///BeFr - Passer d'un Array à une List<T>
-            ///Remplace : return new List<LignePanier>();
-            ///Par : return lignesPanier;
-            ///</sumary>
-
             return lignesPanier;
         }
-
         /// <summary>
         /// Ajoute un produit dans le panier ou incrémente sa quantité dans le panier si déjà présent
         /// </summary>//
         public void AjouterElement(Produit produit, int quantite)
         {
-            // TODO implementer la méthode
-            ///<sumary>
-            ///BeFr - Méthode pour ajouter un produit dans le panier
-            ///</sumary>
             var lignePanier = GetListeDesLignesDuPanier();
             var ligne = lignePanier.FirstOrDefault(p => p.Produit== produit);
             if (ligne != null)
@@ -49,7 +34,6 @@ namespace P2FixAnAppDotNetCode.Models
                 lignePanier.Add(new LignePanier { Produit= produit,Quantite= quantite });
             }
         }
-
         /// <summary>
         /// Supprimer un produit du panier
         /// </summary>
@@ -61,10 +45,6 @@ namespace P2FixAnAppDotNetCode.Models
         /// </summary>
         public double GetValeurTotale()
         {
-            // TODO implementer la méthode
-            ///<sumary>
-            ///BeFr - Méthode pour calculer la valeur totale du panier
-            ///</sumary>
             double somme = 0.0;
             foreach (LignePanier lignes in lignesPanier)
             {
@@ -72,16 +52,11 @@ namespace P2FixAnAppDotNetCode.Models
             }
             return somme;
         }
-
         /// <summary>
         /// Récupère la valeur moyenne du panier
         /// </summary>
         public double GetValeurMoyenne()
         {
-            // TODO implementer la méthode
-            ///<sumary>
-            ///BeFr - Méthode pour calculer la valeur moyenne du panier
-            ///</sumary>
             double moyenne = 0.0;
             double quantiteTotale = 0.0;
             foreach (var lignes in lignesPanier)
@@ -91,16 +66,11 @@ namespace P2FixAnAppDotNetCode.Models
             }
             return moyenne / quantiteTotale;
         }
-
         /// <summary>
         /// Cherche un produit donné dans le panier et le retourne si trouvé
         /// </summary>
         public Produit TrouveProduitDansLesLignesDuPanier(int idProduit)
         {
-            // TODO implementer la méthode
-            ///<sumary>
-            ///BeFr - Méthode pour trouver un produit par son id dans le panier
-            ///</sumary>
             Produit trouveProduit = null;
             foreach (var ligne in lignesPanier)
             {
@@ -109,7 +79,6 @@ namespace P2FixAnAppDotNetCode.Models
             }
             return trouveProduit;
         }
-
         /// <summary>
         /// Retourne une ligne de panier à partir de son indice
         /// </summary>
@@ -117,7 +86,6 @@ namespace P2FixAnAppDotNetCode.Models
         {
             return Lignes.ToArray()[indice];
         }
-
         /// <summary>
         /// Vide un panier de tous ses produits
         /// </summary>
@@ -127,7 +95,6 @@ namespace P2FixAnAppDotNetCode.Models
             lignePaniers.Clear();
         }
     }
-
     public class LignePanier
     {
         public int CommandeLigneId { get; set; }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace P2FixAnAppDotNetCode.Models
@@ -10,8 +8,6 @@ namespace P2FixAnAppDotNetCode.Models
         [BindNever]
         public int IdCommande { get; set; }
         [BindNever]
-        // BeFr - Remplace : public ICollection<LignePanier> Lignes { get; set; }
-        //             par : public ICollection<LignePanier>? Lignes { get; set; }
         public ICollection<LignePanier>? Lignes { get; set; }
         [Required(ErrorMessage = "ErrorMissingName")]
         public string Nom { get; set; }
